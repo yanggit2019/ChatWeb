@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to the Flask App</h1>
+    <p class="lead">This is a simple Flask application using Bootstrap for styling.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('main.register') }}" role="button">Register</a>
+</div>
+{% endblock %}
